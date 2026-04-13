@@ -403,3 +403,44 @@ p {
 .btn:hover {
   background: #e68900;
 }
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #e0e0e0;
+}
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #0d47a1;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-box {
+  background: #f9fbff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 4px solid #0d47a1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
