@@ -236,3 +236,7 @@ body {
 .section-box p {
   color: #333;
 }
+.section-box p {
+  display: block !important;
+  color: #333 !important;
+}
