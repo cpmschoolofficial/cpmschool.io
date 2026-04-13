@@ -370,3 +370,36 @@ h1, h2, h3 {
 p {
   color: var(--text-light);
 }
+.feature-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.feature-box h3 {
+  color: #1565c0;
+}
+
+.feature-box p {
+  color: #555;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+.btn {
+  background: #ff9800;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e68900;
+}
