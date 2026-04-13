@@ -444,3 +444,50 @@ p {
   border-top: 4px solid #0d47a1;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+.footer {
+  background: #0a2c5a;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.footer-box h3 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-box p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.footer-box a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background: #081f3f;
+  font-size: 14px;
+}
