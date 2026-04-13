@@ -266,3 +266,17 @@ body {
 footer {
   margin-top: auto;
 }
+.page-banner {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.page-banner h2 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+.page-banner {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
