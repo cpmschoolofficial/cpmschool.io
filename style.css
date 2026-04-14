@@ -514,3 +514,35 @@ footer {
   background: #0d47a1;
   color: white;
 }
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+.image-section {
+  background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754') no-repeat center/cover;
+  height: 300px;
+  position: relative;
+}
+
+.image-section .overlay {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
