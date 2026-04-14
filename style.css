@@ -1,3 +1,12 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* THIS IS THE REAL FIX */
+body {
+  padding-top: 80px;  /* pushes ALL content below header */
+}
 
 * {
   margin: 0;
@@ -667,8 +676,7 @@ header {
 }
 
 /* PUSH CONTENT DOWN */
-.page-banner {
-  margin-top: 80px;  /* THIS IS MAIN FIX */
+ /* THIS IS MAIN FIX */
   background: linear-gradient(135deg, #1565c0, #0d47a1);
   color: white;
   text-align: center;
@@ -717,4 +725,44 @@ header {
   color: black;
   font-weight: bold;
   margin-top: 15px;
+}
+.page-banner {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.page-banner h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+section {
+  padding: 60px 20px;
+  margin-bottom: 30px;  /* IMPORTANT */
+}
+.donation-section {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 50px;
+}
+
+.donation-section h2 {
+  font-size: 32px;
+}
+
+.donation-section p {
+  color: #ddd;
+}
+
+.donate-btn {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.image-section {
+  margin: 50px 0;
 }
