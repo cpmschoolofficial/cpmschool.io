@@ -1,4 +1,14 @@
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body {
+  padding-top: 90px; /* PUSH EVERYTHING DOWN */
+}
+
+header {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -100,10 +110,16 @@ section {
 }
 
 .page-banner {
-  background: #1565c0;
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 80px 20px;
+}
+
+.page-banner h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
 }
 
 .section-box {
@@ -280,12 +296,13 @@ footer {
   background: linear-gradient(135deg, #1565c0, #0d47a1);
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 .page-banner h2 {
-  font-size: 32px;
-  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
 }
 .page-banner {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -541,28 +558,21 @@ footer {
   background: #1ebe5d;
 }
 .image-section {
-  background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754') no-repeat center/cover;
-  height: 300px;
-  position: relative;
-}
-
-.image-section .overlay {
-  background: rgba(0,0,0,0.6);
-  color: white;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.image-section {
-  background: linear-gradient(
-      rgba(0,0,0,0.75),
-      rgba(0,0,0,0.75)
-    ),
-    url('https://images.unsplash.com/photo-1577896851231-70ef18881754') no-repeat center/cover;
   height: 320px;
   position: relative;
+  margin: 40px 0;
+}
+
+/* IMAGE 1 */
+.image1 {
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+  url('https://images.unsplash.com/photo-1509062522246-3755977927d7') center/cover;
+}
+
+/* IMAGE 2 */
+.image2 {
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+  url('https://images.unsplash.com/photo-1523240795612-9a054b0db644') center/cover;
 }
 
 .image-section .overlay {
@@ -573,15 +583,17 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+/* TEXT STRONG */
 .image-section h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: bold;
-  margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .image-section p {
   font-size: 18px;
-  color: #ddd;
+  color: #f1f1f1;
 }
 .donation-section {
   background: linear-gradient(135deg, #0d47a1, #002171);
@@ -658,13 +670,13 @@ header {
   background: linear-gradient(135deg, #1565c0, #0d47a1);
   color: white;
   text-align: center;
-  padding: 60px 20px;
-  margin-bottom: 20px;
+  padding: 80px 20px;
 }
 
 .page-banner h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
+  color: white;
 }
 header {
   background: #0d47a1;
@@ -703,21 +715,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-.donation-section {
-  background: linear-gradient(135deg, #0d47a1, #002171);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-  margin-top: 40px; /* SPACE FROM IMAGE */
-}
-
-.donation-section h2 {
-  font-size: 30px;
-}
-
-.donation-section p {
-  color: #ddd;
-}
 
 /* STRONG BUTTON */
 .donate-btn {
@@ -730,12 +727,13 @@ header {
   background: linear-gradient(135deg, #1565c0, #0d47a1);
   color: white;
   text-align: center;
-  padding: 70px 20px;
+  padding: 80px 20px;
 }
 
 .page-banner h2 {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: bold;
+  color: white;
 }
 section {
   padding: 60px 20px;
@@ -743,18 +741,20 @@ section {
 }
 .donation-section {
   background: #0d47a1;
-  color: white;
   text-align: center;
-  padding: 80px 20px;
-  margin-top: 50px;
+  padding: 90px 20px;
+  margin-top: 40px;
 }
 
 .donation-section h2 {
-  font-size: 32px;
+  font-size: 34px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .donation-section p {
-  color: #ddd;
+  color: #e0e0e0;
+  font-size: 18px;
 }
 
 .donate-btn {
@@ -762,7 +762,4 @@ section {
   color: black;
   font-weight: bold;
   margin-top: 20px;
-}
-.image-section {
-  margin: 50px 0;
 }
