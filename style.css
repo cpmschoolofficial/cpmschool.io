@@ -637,3 +637,26 @@ footer {
   font-size: 18px;
   color: #ddd;
 }
+header {
+  background: var(--primary);
+  color: white;
+  padding: 15px 0;
+  position: sticky;   /* keeps header on top */
+  top: 0;
+  z-index: 1000;
+}
+main {
+  margin-top: 80px; /* creates space below menu */
+}
+.page-banner {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 20px;
+}
+
+.page-banner h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
