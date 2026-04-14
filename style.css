@@ -492,3 +492,25 @@ footer {
   background: #081f3f;
   font-size: 14px;
 }
+.feature-box {
+  min-height: 150px;
+}
+/* PRIMARY BUTTON */
+.btn-primary {
+  background: #ff9800;
+  color: white;
+}
+
+/* SECOND BUTTON */
+.btn-secondary {
+  background: white;
+  color: #0d47a1;
+  border: 2px solid #0d47a1;
+  margin-left: 10px;
+}
+
+/* HOVER EFFECT */
+.btn-secondary:hover {
+  background: #0d47a1;
+  color: white;
+}
