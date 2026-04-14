@@ -546,3 +546,58 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.image-section {
+  background: linear-gradient(
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.75)
+    ),
+    url('https://images.unsplash.com/photo-1577896851231-70ef18881754') no-repeat center/cover;
+  height: 320px;
+  position: relative;
+}
+
+.image-section .overlay {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.image-section p {
+  font-size: 18px;
+  color: #ddd;
+}
+.donation-section {
+  background: linear-gradient(135deg, #0d47a1, #002171);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.donation-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.donation-section p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* STRONG BUTTON */
+.donate-btn {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.donate-btn:hover {
+  background: #ffb300;
+}
