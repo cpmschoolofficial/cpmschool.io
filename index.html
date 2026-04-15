@@ -223,7 +223,7 @@
 const elements = document.querySelectorAll('.animate');
 
 function showOnScroll() {
-  const triggerBottom = window.innerHeight * 0.85;
+  const triggerBottom = window.innerHeight * 0.9;
 
   elements.forEach(el => {
     const boxTop = el.getBoundingClientRect().top;
@@ -234,8 +234,11 @@ function showOnScroll() {
   });
 }
 
+// ✅ RUN ON LOAD (FIX BLANK PAGE)
+window.addEventListener('load', showOnScroll);
+
+// Scroll also
 window.addEventListener('scroll', showOnScroll);
 </script>
-
 </body>
 </html>
