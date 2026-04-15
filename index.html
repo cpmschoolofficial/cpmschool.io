@@ -30,8 +30,11 @@
 </header>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">💬</a>
 
+<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
+  💬
+</a>
+  
 <!-- HERO -->
 <section class="hero">
   <h1>Christian Public Model School</h1>
@@ -224,10 +227,26 @@
 </footer>
 
 <!-- JS -->
+  
 <script>
-function toggleMenu() {
+function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
 }
+
+const elements = document.querySelectorAll('.animate');
+
+function showOnScroll(){
+  const trigger = window.innerHeight * 0.85;
+
+  elements.forEach(el=>{
+    if(el.getBoundingClientRect().top < trigger){
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('load', showOnScroll);
+window.addEventListener('scroll', showOnScroll);
 </script>
 
 </body>
