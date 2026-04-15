@@ -188,6 +188,17 @@
   <p>Your support can change a child's life</p>
   <a href="contact.html" class="btn donate-btn">Donate Now</a>
 </section>
+  <script>
+function openPopup(title, text) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-title").innerText = title;
+  document.getElementById("popup-text").innerText = text;
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
 
 <!-- FOOTER -->
 <footer class="footer">
