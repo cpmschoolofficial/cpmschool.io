@@ -126,3 +126,24 @@
     <p>© 2026 Christian Public Model School. All Rights Reserved.</p>
   </div>
 </footer>
+<script>
+const elements = document.querySelectorAll('.animate');
+
+function showOnScroll() {
+  const triggerBottom = window.innerHeight * 0.9;
+
+  elements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      el.classList.add('show');
+    }
+  });
+}
+
+// ✅ RUN ON LOAD (FIX BLANK PAGE)
+window.addEventListener('load', showOnScroll);
+
+// Scroll also
+window.addEventListener('scroll', showOnScroll);
+</script>
