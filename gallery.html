@@ -123,5 +123,29 @@ images.forEach(img => {
   });
 });
 </script>
+
+  <script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+
+// ANIMATION
+const elements = document.querySelectorAll('.animate');
+
+function showOnScroll() {
+  const triggerBottom = window.innerHeight * 0.9;
+
+  elements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('load', showOnScroll);
+window.addEventListener('scroll', showOnScroll);
+</script>
 </body>
 </html>
