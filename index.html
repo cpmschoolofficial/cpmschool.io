@@ -68,6 +68,12 @@
 
     <div class="features">
 
+      <div class="feature-box animate"
+onclick="openPopup('Access to Education','We ensure every child can go to school and support poor families.')">
+  <h3>📚 Access to Education</h3>
+  <p>Click to read more</p>
+</div>
+
       <div class="feature-box animate" onclick="openPopup('📚 Access to Education','We ensure every child has the opportunity to go to school by supporting poor families and promoting equal education.')">
   <h3>📚 Access to Education</h3>
   <p>Click to read more</p>
@@ -199,6 +205,14 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 </script>
+  <!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2 id="popup-title"></h2>
+    <p id="popup-text"></p>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -276,6 +290,17 @@ function showOnScroll() {
 window.addEventListener('load', showOnScroll);
 window.addEventListener('scroll', showOnScroll);
 </script>
-  
+
+  <script>
+function openPopup(title, text) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-title").innerText = title;
+  document.getElementById("popup-text").innerText = text;
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
 </body>
 </html>
