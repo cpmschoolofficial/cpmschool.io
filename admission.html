@@ -39,38 +39,33 @@
   <h2>Admissions Open</h2>
 </section>
 
-<section>
-  <h2 class="section-title">Student Admission Form</h2>
+<section class="container section-box">
 
-<form action="https://formsubmit.co/cpmschoolofficial@gmail.com" method="POST">
+  <h2 class="section-title">Admission Form</h2>
 
-  <!-- Hidden settings -->
-  <input type="hidden" name="_next" value="thankyou.html">
-  <input type="hidden" name="_captcha" value="false">
+  <form action="https://formsubmit.co/cpmschoolofficial@gmail.com" method="POST">
 
-  <h3>Student Information</h3>
+    <h3>Student Information</h3>
+    <input type="text" name="Student Name" placeholder="Full Name" required>
+    <input type="date" name="DOB" required>
+    <input type="text" name="Class" placeholder="Class Applying For" required>
 
-  <input type="text" name="Student Name" placeholder="Student Full Name" required>
-  <input type="number" name="Age" placeholder="Age" required>
-  <input type="text" name="Class" placeholder="Class Applying For" required>
+    <h3>Parent Information</h3>
+    <input type="text" name="Father Name" placeholder="Father Name" required>
+    <input type="text" name="Mother Name" placeholder="Mother Name">
+    <input type="tel" name="Phone" placeholder="Contact Number" required>
 
-  <h3>Parent Information</h3>
+    <h3>Address</h3>
+    <textarea name="Address" placeholder="Full Address" required></textarea>
 
-  <input type="text" name="Father Name" placeholder="Father Name" required>
-  <input type="text" name="Mother Name" placeholder="Mother Name">
-  <input type="text" name="Phone" placeholder="Contact Number" required>
+    <h3>Previous School</h3>
+    <input type="text" name="Previous School" placeholder="Previous School Name">
 
-  <h3>Address</h3>
+    <button type="submit" class="btn btn-primary">Submit Application</button>
 
-  <textarea name="Address" placeholder="Full Address" required></textarea>
+  </form>
 
-  <h3>Additional Information</h3>
-
-  <textarea name="Message" placeholder="Any additional information..."></textarea>
-
-  <button type="submit" class="btn">Submit Admission</button>
-
-</form>
+</section>
   
   <div class="container section-box">
 
