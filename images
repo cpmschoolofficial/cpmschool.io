@@ -1,0 +1,12 @@
+/website-root
+│
+├── index.html
+├── style.css
+│
+├── /images
+│     ├── slide1.jpg
+│     ├── slide2.jpg
+│     ├── slide3.jpg
+│     ├── about.jpg
+│     ├── gallery1.jpg
+│     └── gallery2.jpg
