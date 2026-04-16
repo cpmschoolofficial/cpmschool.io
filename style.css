@@ -516,4 +516,28 @@ h2, h3 {
   object-fit: cover;
   border-radius: 10px;
 }
+.hero p {
+  margin-bottom: 25px;   /* space between text & buttons */
+}
+.hero .btn {
+  margin: 10px;          /* space between buttons */
+}
+.donation-section h2 {
+  margin-bottom: 15px;
+}
 
+.donation-section p {
+  margin-bottom: 25px;
+}
+
+.donate-btn {
+  margin-top: 20px;
+}
+.image-section h2 {
+  margin-bottom: 10px;
+}
+
+.image-section p {
+  margin-top: 5px;
+}
+  
