@@ -441,4 +441,79 @@ h2, h3 {
     font-size: 28px;
   }
 }
-  
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('images/hero.jpg'); /* use your own image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 160px 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;   /* BIG */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #f1f1f1;
+}
+.donation-section {
+  background: linear-gradient(135deg, #0d47a1, #002171);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.donation-section h2 {
+  font-size: 36px;
+  color: white;
+}
+
+.donation-section p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.donate-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 16px 40px;
+  font-size: 20px;
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.donate-btn:hover {
+  background: #ffb300;
+}
+.page-banner {
+  padding: 40px 20px;   /* reduced */
+  margin-top: 0;        /* remove gap */
+}
+
+.page-banner h2 {
+  margin: 0;
+  font-size: 32px;
+}
+.about-item {
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;   /* FIXED SIZE */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
