@@ -591,3 +591,37 @@ section {
   .section-box {
   text-align: center;
 }
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+  .hero h1 {
+  font-size: 56px; /* bigger */
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.section-title {
+  font-size: 38px;
+}
+
+.feature-box p {
+  font-size: 17px;
+}
+  section {
+  padding: 80px 5%;
+}
+  .feature-box {
+  transition: 0.4s;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+  .btn {
+  font-size: 18px;
+  padding: 14px 30px;
+}
