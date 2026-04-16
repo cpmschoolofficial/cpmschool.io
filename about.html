@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Christian Public Model School</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,12 +12,14 @@
 <!-- HEADER -->
 <header>
   <nav class="container">
-    <div style="display:flex;align-items:center;gap:10px;">
-      <img src="logo.jpg" width="50">
-      <h3 style="color:white;">Christian Public Model School</h3>
+    <div class="logo">
+      <img src="images/logo.jpg" width="45">
+      <h3>Christian Public Model School</h3>
     </div>
 
-    <ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="admission.html">Admission</a></li>
@@ -27,207 +29,104 @@
   </nav>
 </header>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">💬</a>
-
-<!-- BANNER -->
-<section class="page-banner animate">
+<!-- PAGE BANNER -->
+<section class="page-banner">
   <h2>About Our School</h2>
 </section>
 
-<!-- CONTENT -->
+<!-- ABOUT MAIN -->
 <section>
-  <div class="container section-box animate">
+  <div class="container">
 
-    <h2 class="section-title">Who We Are</h2>
-
-    <div class="about-item animate">
-      <h3>📘 About School</h3>
+    <!-- ABOUT -->
+    <div class="section-box about-box">
+      <img src="images/school1.jpg">
+      <h2>Who We Are</h2>
       <p>
-        Christian Public Model School is committed to providing high-quality education,
-        strong moral values, and a bright future for every student.
+        Christian Public Model School is committed to providing free education
+        to underprivileged children. Since 1997, we have been helping families
+        by offering quality education, discipline, and strong moral values.
       </p>
     </div>
 
-    <div class="about-item animate">
-      <h3>🎯 Our Commitment</h3>
+    <!-- MISSION -->
+    <div class="section-box about-box">
+      <img src="images/school2.jpg">
+      <h2>Our Mission</h2>
       <p>
-        We believe in excellence, discipline, innovation, and character-building.
-        Our experienced teachers help every child succeed.
+        Our mission is to provide free education, basic needs, and a safe
+        environment where every child can learn, grow, and succeed in life.
       </p>
     </div>
 
-    <div class="about-item animate">
-      <h3>🤝 Community Support</h3>
+    <!-- VISION -->
+    <div class="section-box about-box">
+      <img src="images/school3.jpg">
+      <h2>Our Vision</h2>
       <p>
-        We are helping poor children who cannot afford education and currently
-        using church facilities to provide free learning.
+        We aim to build a society where every child has access to education,
+        opportunity, and a better future regardless of financial background.
       </p>
     </div>
 
-    <div class="about-item animate">
-      <h3>🎓 Mission</h3>
-      <p>
-        To provide free education, basic needs, and a safe environment for underprivileged children.
-      </p>
-    </div>
+    <!-- ADMISSION PROCESS (INSIDE ABOUT) -->
+    <div class="section-box about-box">
+      <img src="images/school4.jpg">
+      <h2>Admission Process</h2>
 
-    <div class="about-item animate">
-      <h3>🌍 Vision</h3>
-      <p>
-        To create a society where every child has access to education and opportunity.
-      </p>
-    </div>
+      <ul>
+        <li>Fill out the admission form</li>
+        <li>Submit required documents</li>
+        <li>Meet with school administration</li>
+        <li>Complete registration</li>
+      </ul>
 
-    <div class="about-item animate">
-      <h3>📜 History</h3>
-      <p>
-        We have been running this school since 1997 to help poor people grow through education.
-      </p>
+      <h3>Required Documents:</h3>
+      <ul>
+        <li>Birth Certificate Copy</li>
+        <li>Passport / Emirates ID</li>
+        <li>Passport Size Photos</li>
+        <li>Previous School Record</li>
+      </ul>
     </div>
 
   </div>
-</section>
- <section class="container section-box">
-
-  <h2 class="section-title">About Admissions</h2>
-
-  <p class="about-text">
-    Christian Public Model School provides quality education for all children.
-    Our admission process is simple, transparent, and designed to support
-    underprivileged families. We welcome students from all backgrounds and
-    ensure equal learning opportunities.
-  </p>
-
-</section>
-  
-
-  <section class="admission-process-section">
-
-  <h2 class="section-title">Admission Process</h2>
-
-  <div class="process-steps">
-
-    <div class="step">
-      <div class="step-icon">📝</div>
-      <h3>Fill Application</h3>
-      <p>Complete the admission form with correct details.</p>
-    </div>
-
-    <div class="step">
-      <div class="step-icon">📄</div>
-      <h3>Submit Documents</h3>
-      <p>Provide required documents like B-Form and records.</p>
-    </div>
-
-    <div class="step">
-      <div class="step-icon">📞</div>
-      <h3>Verification</h3>
-      <p>School will review and contact for confirmation.</p>
-    </div>
-
-    <div class="step">
-      <div class="step-icon">🎉</div>
-      <h3>Admission Confirmed</h3>
-      <p>Student is enrolled and classes begin.</p>
-    </div>
-
-  </div>
-
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container footer-content">
+  <div class="footer-content">
 
     <div>
       <h3>Christian Public Model School</h3>
-      <p>Providing free education and hope to underprivileged children.</p>
+      <p>Providing free education and hope.</p>
     </div>
 
     <div>
       <h3>Quick Links</h3>
       <p><a href="index.html">Home</a></p>
       <p><a href="about.html">About</a></p>
-      <p><a href="admission.html">Admission</a></p>
-      <p><a href="contact.html">Contact</a></p>
     </div>
 
     <div>
       <h3>Contact</h3>
       <p>📞 +92 301 6647770</p>
       <p>📧 cpmschoolofficial@gmail.com</p>
-      <p>📍 Pakistan</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 Christian Public Model School. All Rights Reserved.</p>
+    © 2026 Christian Public Model School
   </div>
 </footer>
-<!-- ANIMATION SCRIPT -->
-<script>
-const elements = document.querySelectorAll('.animate');
 
-function showOnScroll() {
-  const triggerBottom = window.innerHeight * 0.9;
-
-  elements.forEach(el => {
-    const boxTop = el.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('load', showOnScroll);
-window.addEventListener('scroll', showOnScroll);
-</script>
-<script>
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("active");
-}
-
-// ANIMATION
-const elements = document.querySelectorAll('.animate');
-
-function showOnScroll() {
-  const triggerBottom = window.innerHeight * 0.9;
-
-  elements.forEach(el => {
-    const boxTop = el.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('load', showOnScroll);
-window.addEventListener('scroll', showOnScroll);
-</script>
-  
+<!-- JS -->
 <script>
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
 }
-
-const elements = document.querySelectorAll('.animate');
-
-function showOnScroll(){
-  const trigger = window.innerHeight * 0.85;
-  elements.forEach(el=>{
-    if(el.getBoundingClientRect().top < trigger){
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('load', showOnScroll);
-window.addEventListener('scroll', showOnScroll);
 </script>
-  
+
 </body>
 </html>
