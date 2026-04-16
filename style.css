@@ -595,4 +595,37 @@ section {
 .hero {
   background: url('images/hero.jpg') center/cover;
 }
-  
+  /* ABOUT PAGE BOX STYLE */
+.about-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-box img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.about-box h2 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.about-box p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* LIST STYLE */
+.about-box ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+.about-box ul li {
+  margin-bottom: 8px;
+}
