@@ -819,4 +819,39 @@ nav ul li a {
   h2 { font-size: 26px !important; }
   p { font-size: 16px; }
 }
+  /* DONATION HERO */
+.donate-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('images/banners/banner1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.donate-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.donate-hero p {
+  font-size: 20px;
+}
+
+/* PAYMENT BOX */
+.payment-box {
+  background: white;
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 400px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.payment-box h3 {
+  color: #0d47a1;
+  margin: 10px 0;
+}
   
