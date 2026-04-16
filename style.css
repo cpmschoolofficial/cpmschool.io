@@ -591,3 +591,7 @@ section {
   .section-box {
   text-align: center;
 }
+.hero {
+  background: url('images/hero.jpg') center/cover;
+}
+  
