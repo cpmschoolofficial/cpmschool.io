@@ -108,9 +108,8 @@ nav ul li a:hover::after{
 
   background:
   linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1600&q=80');
-  background-size:cover;
-  background-position:center;
+  .hero {
+  background: url('images/hero/hero.jpg') center/cover no-repeat;
 }
 
 .hero h1{
