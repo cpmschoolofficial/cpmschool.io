@@ -1,0 +1,288 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* COLORS */
+:root{
+  --primary:#0d47a1;
+  --secondary:#1565c0;
+  --accent:#ff9800;
+  --light:#f4f7fb;
+}
+
+/* BODY */
+body{
+  background:var(--light);
+  color:#222;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(13,71,161,0.95);
+  backdrop-filter:blur(10px);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 5%;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:white;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* MOBILE */
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  color:white;
+}
+
+@media(max-width:768px){
+  .menu-toggle{display:block;}
+  nav ul{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    background:var(--primary);
+  }
+  nav ul.active{display:flex;}
+  nav ul li{text-align:center;margin:10px;}
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('images/hero/hero1.jpg') center/cover;
+}
+
+.hero h1{
+  font-size:50px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:22px;
+  margin-bottom:30px; /* FIXED SPACE */
+}
+
+/* BUTTON */
+.btn{
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:10px; /* SPACE BETWEEN BUTTONS */
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:white;
+}
+
+.btn-secondary{
+  background:white;
+  color:var(--primary);
+}
+
+/* SECTION */
+section{
+  padding:70px 5%;
+}
+
+/* TITLE */
+.section-title{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:40px;
+  color:var(--primary);
+}
+
+/* CARDS */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.feature-box{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.feature-box:hover{
+  transform:translateY(-8px);
+}
+
+/* ABOUT BOX */
+.section-box{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* IMAGE SECTIONS */
+.image-section{
+  height:350px;
+  margin:40px 0;
+  background-size:cover;
+  background-position:center;
+}
+
+.image1{
+  background:url('images/banners/banner1.jpg') center/cover;
+}
+
+.image2{
+  background:url('images/banners/banner2.jpg') center/cover;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.7);
+  color:white;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+/* STUDENTS */
+.student-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* DONATION */
+.donation-section{
+  background:linear-gradient(135deg,#0d47a1,#002171);
+  color:white;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.donation-section h2{
+  margin-bottom:15px;
+}
+
+.donation-section p{
+  margin-bottom:30px; /* FIXED SPACE */
+}
+
+.donate-btn{
+  background:#ffcc00;
+  color:black;
+  padding:16px 40px;
+  font-size:20px;
+  border-radius:8px;
+  margin-top:20px;
+}
+
+/* FORM (CONTACT + ADMISSION) */
+form{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea,
+form select{
+  width:100%;
+  padding:14px;
+  margin-bottom:20px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+/* FOOTER */
+.footer{
+  background:#081f3f;
+  color:white;
+}
+
+.footer-content{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:30px 5%;
+}
+
+.footer-bottom{
+  text-align:center;
+  padding:15px;
+  background:#06162c;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:white;
+  font-size:30px;
+  padding:18px;
+  border-radius:50%;
+  box-shadow:0 0 15px #25D366;
+}
+
+/* ANIMATION */
+.animate{
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.6s;
+}
+
+.animate.show{
+  opacity:1;
+  transform:translateY(0);
+}
