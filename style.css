@@ -546,4 +546,48 @@ h2, h3 {
 .image1 {
   background: url('images/banners/banner1.jpg') center/cover;
 }
+/* HERO FIX */
+.hero {
+  padding: 160px 20px;
+  text-align: center;
+}
 
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px; /* SPACE ADDED */
+}
+
+.hero .btn {
+  margin: 10px; /* SPACE BETWEEN BUTTONS */
+}
+  /* DONATION FIX */
+.donation-section h2 {
+  margin-bottom: 15px;
+}
+
+.donation-section p {
+  margin-bottom: 30px; /* SPACE FIX */
+}
+
+.donate-btn {
+  margin-top: 20px;
+  padding: 16px 40px;
+  font-size: 20px;
+}
+  /* REMOVE EXTRA SPACE */
+.page-banner {
+  margin: 0;
+  padding: 40px 20px;
+}
+
+section {
+  margin: 0;
+}
+  .section-box {
+  text-align: center;
+}
