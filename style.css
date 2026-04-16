@@ -756,3 +756,68 @@ section {
   color:#0d47a1;
   font-size:36px;
 }
+/* GLOBAL TEXT SIZE INCREASE */
+body {
+  font-size: 18px; /* default was ~14-16 */
+}
+
+/* HEADINGS BIGGER */
+h1 {
+  font-size: 52px !important;
+}
+
+h2 {
+  font-size: 36px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+/* PARAGRAPH */
+p {
+  font-size: 18px;
+}
+
+/* NAV MENU */
+nav ul li a {
+  font-size: 18px;
+}
+
+/* BUTTON TEXT */
+.btn {
+  font-size: 18px;
+}
+
+/* SLIDER TEXT */
+.slide-content h1 {
+  font-size: 50px;
+}
+
+.slide-content p {
+  font-size: 22px;
+}
+
+/* FEATURE BOX */
+.feature-box h3 {
+  font-size: 22px;
+}
+
+.feature-box p {
+  font-size: 16px;
+}
+
+/* DONATION SECTION */
+.donation-section h2 {
+  font-size: 40px;
+}
+
+.donation-section p {
+  font-size: 20px;
+}
+  @media(max-width:768px){
+  h1 { font-size: 32px !important; }
+  h2 { font-size: 26px !important; }
+  p { font-size: 16px; }
+}
+  
