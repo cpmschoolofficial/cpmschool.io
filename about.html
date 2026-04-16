@@ -29,68 +29,128 @@
   </nav>
 </header>
 
-<!-- PAGE BANNER -->
+<!-- BANNER -->
 <section class="page-banner">
   <h2>About Our School</h2>
 </section>
 
-<!-- ABOUT MAIN -->
+<!-- WHO WE ARE (IMAGE LEFT STYLE) -->
+<section class="about-flex">
+  <img src="images/school1.jpg">
+  <div>
+    <h2>Who We Are</h2>
+    <p>
+      Christian Public Model School has been serving underprivileged children
+      since 1997. We provide free education, moral training, and a safe
+      environment to help children build a better future.
+    </p>
+  </div>
+</section>
+
+<!-- IMPACT COUNTER -->
+<section class="impact-section">
+  <div class="impact-box">
+    <h2>500+</h2>
+    <p>Students Educated</p>
+  </div>
+
+  <div class="impact-box">
+    <h2>25+</h2>
+    <p>Years of Service</p>
+  </div>
+
+  <div class="impact-box">
+    <h2>100%</h2>
+    <p>Free Education</p>
+  </div>
+
+  <div class="impact-box">
+    <h2>10+</h2>
+    <p>Communities Served</p>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
 <section>
-  <div class="container">
+  <div class="container features">
 
-    <!-- ABOUT -->
-    <div class="section-box about-box">
-      <img src="images/school1.jpg">
-      <h2>Who We Are</h2>
+    <div class="feature-box">
+      <h3>🎯 Our Mission</h3>
       <p>
-        Christian Public Model School is committed to providing free education
-        to underprivileged children. Since 1997, we have been helping families
-        by offering quality education, discipline, and strong moral values.
+        To provide free education, essential resources, and a safe learning
+        environment for every child regardless of financial background.
       </p>
     </div>
 
-    <!-- MISSION -->
-    <div class="section-box about-box">
-      <img src="images/school2.jpg">
-      <h2>Our Mission</h2>
+    <div class="feature-box">
+      <h3>🌍 Our Vision</h3>
       <p>
-        Our mission is to provide free education, basic needs, and a safe
-        environment where every child can learn, grow, and succeed in life.
+        To build a society where every child has equal access to education
+        and opportunities for success.
       </p>
-    </div>
-
-    <!-- VISION -->
-    <div class="section-box about-box">
-      <img src="images/school3.jpg">
-      <h2>Our Vision</h2>
-      <p>
-        We aim to build a society where every child has access to education,
-        opportunity, and a better future regardless of financial background.
-      </p>
-    </div>
-
-    <!-- ADMISSION PROCESS (INSIDE ABOUT) -->
-    <div class="section-box about-box">
-      <img src="images/school4.jpg">
-      <h2>Admission Process</h2>
-
-      <ul>
-        <li>Fill out the admission form</li>
-        <li>Submit required documents</li>
-        <li>Meet with school administration</li>
-        <li>Complete registration</li>
-      </ul>
-
-      <h3>Required Documents:</h3>
-      <ul>
-        <li>Birth Certificate Copy</li>
-        <li>Passport / Emirates ID</li>
-        <li>Passport Size Photos</li>
-        <li>Previous School Record</li>
-      </ul>
     </div>
 
   </div>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <h2 class="section-title">Our Journey</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>1997</h3>
+      <p>School started to support poor children</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2010</h3>
+      <p>Expanded classrooms and facilities</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2020</h3>
+      <p>Introduced digital learning</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2026</h3>
+      <p>Continuing mission with more students</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADMISSION PROCESS -->
+<section>
+  <div class="section-box">
+    <h2 class="section-title">Admission Process</h2>
+
+    <ul>
+      <li>Fill out the admission form</li>
+      <li>Submit required documents</li>
+      <li>Meet with administration</li>
+      <li>Complete registration</li>
+    </ul>
+
+    <h3>Required Documents</h3>
+    <ul>
+      <li>Birth Certificate</li>
+      <li>Passport / ID</li>
+      <li>Photos</li>
+      <li>Previous Record</li>
+    </ul>
+  </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section class="video-section">
+  <h2>Our School in Action</h2>
+
+  <iframe width="100%" height="400"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+  </iframe>
 </section>
 
 <!-- FOOTER -->
@@ -121,7 +181,6 @@
   </div>
 </footer>
 
-<!-- JS -->
 <script>
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
