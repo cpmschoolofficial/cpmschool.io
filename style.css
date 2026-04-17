@@ -658,4 +658,29 @@ section {
     flex-direction: column;
   }
 }
-  
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+  .gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+  .hero,
+.image-section {
+  min-height: 60vh;   /* flexible height */
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+  @media (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .image-section {
+    min-height: 80vh;
+  }
+}
