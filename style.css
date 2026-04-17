@@ -753,3 +753,9 @@ section {
 #menu li a:hover {
   color: #ffcc00;
 }
+.about-flex img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+  
