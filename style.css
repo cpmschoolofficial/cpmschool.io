@@ -636,4 +636,26 @@ section {
 .gallery img:hover {
   transform: scale(1.05);
 }
+  form {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input {
+  width: 100%;
+}
+
+@media(max-width:768px){
+  .form-row {
+    flex-direction: column;
+  }
+}
   
