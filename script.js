@@ -17,3 +17,7 @@ function showOnScroll(){
 
 window.addEventListener('load', showOnScroll);
 window.addEventListener('scroll', showOnScroll);
+
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
