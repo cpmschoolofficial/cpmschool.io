@@ -782,3 +782,99 @@ section {
   height: 100%;
   object-fit: cover;
 }
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+  .slider {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 🔥 THIS FIXES IMAGE FIT */
+}
+  .image-section img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+  .student-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+  .gallery img:hover {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+  #menu {
+  position: fixed;   /* NOT relative */
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100%;
+  background: #0d47a1;
+  transition: 0.4s;
+  z-index: 1000;
+}
+
+#menu.active {
+  right: 0;
+}
+  header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;  /* HIGHER than menu */
+}
+  .menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+  
