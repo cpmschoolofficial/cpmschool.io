@@ -879,4 +879,43 @@ img {
   height: 180px;
   object-fit: cover;
 }
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
 
+/* DEFAULT MENU (DESKTOP) */
+#menu {
+  display: flex;
+  list-style: none;
+}
+
+/* MOBILE STYLE */
+@media(max-width:768px){
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0d47a1;
+    flex-direction: column;
+    display: none;
+  }
+
+  #menu.active {
+    display: flex;
+  }
+
+  #menu li {
+    text-align: center;
+    padding: 15px;
+  }
+}
