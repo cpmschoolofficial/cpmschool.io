@@ -243,9 +243,34 @@ img{
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   padding:30px 5%;
 }
-
 .footer-bottom{
   text-align:center;
   padding:15px;
   background:#06162c;
+}
+.logo img{
+  width:60px;
+}
+@media(max-width:768px){
+
+  nav{
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .logo h3{
+    font-size:.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  font-size:26px;
+  padding:14px 18px;
+  border-radius:50%;
+  z-index:9999;
 }
