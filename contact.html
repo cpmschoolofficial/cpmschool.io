@@ -16,7 +16,12 @@
       <h3>Christian Public Model School</h3>
     </div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+  document.querySelector(".overlay").classList.toggle("active");
+}
+</script>
 
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
