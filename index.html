@@ -19,9 +19,11 @@
     </div>
 
     <!-- MENU BUTTON -->
-   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<div class="menu-overlay" onclick="toggleMenu()"></div>
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
 
 <ul id="menu">
   <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
