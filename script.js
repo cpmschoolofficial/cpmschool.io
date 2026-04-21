@@ -26,3 +26,9 @@ function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
   document.querySelector(".overlay").classList.toggle("active");
 }
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
+</script>
