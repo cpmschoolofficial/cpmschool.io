@@ -325,3 +325,10 @@ img{
   position:relative;
   z-index:3;
 }
+.overlay{
+  pointer-events: none;
+}
+
+.overlay.active{
+  pointer-events: auto;
+}
