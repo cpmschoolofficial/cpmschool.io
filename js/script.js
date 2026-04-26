@@ -32,3 +32,17 @@ function showOnScroll(){
 
 window.addEventListener('load', showOnScroll);
 window.addEventListener('scroll', showOnScroll);
+.overlay {
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.6);
+  z-index:1500;
+}
