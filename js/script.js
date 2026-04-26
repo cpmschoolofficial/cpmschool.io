@@ -46,3 +46,6 @@ window.addEventListener('scroll', showOnScroll);
   background: rgba(0,0,0,0.6);
   z-index:1500;
 }
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+}
