@@ -65,3 +65,8 @@ function showSlide(){
 }
 
 setInterval(showSlide, 4000);
+
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
