@@ -15,8 +15,7 @@
      <img src="images/logo.jpg" width="50">
       <h3 style="color:white;">Christian Public Model School</h3>
     </div>
-
-   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <div class="overlay" onclick="toggleMenu()"></div>
 
@@ -91,81 +90,6 @@
   </div>
 </  <link rel="stylesheet" href="style.css">
 </head>
-<script>
-const images = document.querySelectorAll('.gallery img');
-
-images.forEach(img => {
-  img.addEventListener('click', () => {
-    const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = 0;
-    popup.style.left = 0;
-    popup.style.width = '100%';
-    popup.style.height = '100%';
-    popup.style.background = 'rgba(0,0,0,0.8)';
-    popup.style.display = 'flex';
-    popup.style.justifyContent = 'center';
-    popup.style.alignItems = 'center';
-
-    const bigImg = document.createElement('img');
-    bigImg.src = img.src;
-    bigImg.style.maxWidth = '90%';
-    bigImg.style.borderRadius = '10px';
-
-    popup.appendChild(bigImg);
-
-    popup.addEventListener('click', () => {
-      popup.remove();
-    });
-
-    document.body.appendChild(popup);
-  });
-});
-</script>
-
-  <script>
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("active");
-}
-
-// ANIMATION
-const elements = document.querySelectorAll('.animate');
-
-function showOnScroll() {
-  const triggerBottom = window.innerHeight * 0.9;
-
-  elements.forEach(el => {
-    const boxTop = el.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('load', showOnScroll);
-window.addEventListener('scroll', showOnScroll);
-</script>
-
-  <script>
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("active");
-}
-
-const elements = document.querySelectorAll('.animate');
-
-function showOnScroll(){
-  const trigger = window.innerHeight * 0.85;
-  elements.forEach(el=>{
-    if(el.getBoundingClientRect().top < trigger){
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('load', showOnScroll);
-window.addEventListener('scroll', showOnScroll);
-</script>
  <script src="script.js"></script> 
 </body>
 </html>
