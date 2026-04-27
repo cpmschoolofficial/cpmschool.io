@@ -226,3 +226,27 @@ section{
   padding:15px;
   background:#06162c;
 }
+.about-flex{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.about-flex img{
+  width:100%;
+  max-width:500px;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+  .about-flex{
+    flex-direction:column;
+  }
+
+  .about-flex img{
+    height:auto;
+  }
+}
