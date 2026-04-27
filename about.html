@@ -81,7 +81,7 @@
 
 <!-- MISSION + VISION -->
 <section>
-  <div class="container section-box>
+  <div class="container section-box">
     
     <h2 class="section-title">Our Mission & Vision</h2>
 
@@ -195,6 +195,9 @@
       <h3>Quick Links</h3>
       <p><a href="index.html">Home</a></p>
       <p><a href="about.html">About</a></p>
+       <p><a href="donate.html">Donation</a></p>
+       <p><a href="gallery.html">Gallery</a></p>
+       <p><a href="contact.html">Contact</a></p>
     </div>
 
     <div>
@@ -209,28 +212,7 @@
     © 2026 Christian Public Model School
   </div>
 </footer>
-
-<script>
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("active");
-}
-</script>
-<script>
-const elements = document.querySelectorAll('.animate');
-
-function showOnScroll(){
-  const trigger = window.innerHeight * 0.85;
-
-  elements.forEach(el=>{
-    if(el.getBoundingClientRect().top < trigger){
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('load', showOnScroll);
-window.addEventListener('scroll', showOnScroll);
-</script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>
