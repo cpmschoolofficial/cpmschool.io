@@ -317,3 +317,36 @@ section{
     text-align:center;
   }
 }
+@media(max-width:768px){
+
+  #navMenu{
+    display:flex;
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:260px;
+    height:100%;
+    background:#0d47a1;
+    flex-direction:column;
+    padding-top:80px;
+    transition:0.3s;
+    z-index:2000;
+  }
+
+  #navMenu.active{
+    right:0;
+  }
+}
+@media(min-width:769px){
+  #navMenu{
+    display:flex !important;
+    position:static;
+    height:auto;
+    width:auto;
+    background:none;
+    flex-direction:row;
+  }
+}
+.menu-toggle{
+  margin-left:auto;
+}
