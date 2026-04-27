@@ -272,3 +272,10 @@ nav{
   height:70px;
   object-fit:contain;
 }
+#navMenu a{
+  color:white;
+}
+
+#navMenu a:visited{
+  color:white;
+}
