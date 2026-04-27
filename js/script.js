@@ -74,3 +74,7 @@ function toggleMenu(){
 function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
 }
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
