@@ -1,18 +1,19 @@
-// MOBILE MENU
-function toggleMenu() {
+function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
-  document.querySelector(".overlay").classList.toggle("active");
 }
 
-// SLIDER AUTO
+/* SLIDER FIX */
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 
-function showSlide() {
+function showSlide(){
   slides.forEach(s => s.classList.remove("active"));
-  index++;
-  if (index >= slides.length) index = 0;
   slides[index].classList.add("active");
+
+  index++;
+  if(index >= slides.length){
+    index = 0;
+  }
 }
 
 setInterval(showSlide, 4000);
