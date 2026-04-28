@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-  <head>
- <title>Christian Public Model  School - Gallery</title>
-<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Public Model School - Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-<!-- Header -->
-  <header>
-  <nav>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav class="container">
 
     <div class="logo">
-      <img src="images/logo.jpg">
+      <img src="images/logo.jpg" alt="Logo">
       <h3>Christian Public Model School</h3>
     </div>
 
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
     <div class="menu-overlay" onclick="toggleMenu()"></div>
 
     <ul id="navMenu">
@@ -29,38 +32,33 @@
 
   </nav>
 </header>
-  
-<body>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Gallery</title>
 
-<body>
-
+<!-- HERO -->
 <section class="page-banner">
   <h2>Our Gallery</h2>
 </section>
 
-<section class="gallery">  
-  <img src="images/gallery/gallery1.jpg">
-  <img src="images/gallery/gallery2.jpg">
-  <img src="images/gallery/gallery3.jpg">
-  <img src="images/gallery/gallery4.jpg">
-  <img src="images/gallery/gallery5.jpg">
-  <img src="images/gallery/gallery6.jpg">
-  <img src="images/gallery/gallery7.jpg">
-  <img src="images/gallery/gallery8.jpg">
-  <img src="images/gallery/gallery9.jpg">
-  <img src="images/gallery/gallery10.jpg">
-  <img src="images/gallery/gallery11.jpg">
-  <img src="images/gallery/gallery12.jpg">
-  <img src="images/gallery/gallery13.jpg">
-  <img src="images/gallery/gallery14.jpg">
-  <img src="images/gallery/gallery15.jpg">
-  <img src="images/gallery/gallery16jpg">
+<!-- GALLERY -->
+<section class="gallery">
+  <img src="images/gallery/gallery1.jpg" alt="">
+  <img src="images/gallery/gallery2.jpg" alt="">
+  <img src="images/gallery/gallery3.jpg" alt="">
+  <img src="images/gallery/gallery4.jpg" alt="">
+  <img src="images/gallery/gallery5.jpg" alt="">
+  <img src="images/gallery/gallery6.jpg" alt="">
+  <img src="images/gallery/gallery7.jpg" alt="">
+  <img src="images/gallery/gallery8.jpg" alt="">
+  <img src="images/gallery/gallery9.jpg" alt="">
+  <img src="images/gallery/gallery10.jpg" alt="">
+  <img src="images/gallery/gallery11.jpg" alt="">
+  <img src="images/gallery/gallery12.jpg" alt="">
+  <img src="images/gallery/gallery13.jpg" alt="">
+  <img src="images/gallery/gallery14.jpg" alt="">
+  <img src="images/gallery/gallery15.jpg" alt="">
+  <img src="images/gallery/gallery16.jpg" alt="">
 </section>
-  
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-content">
 
@@ -73,7 +71,7 @@
       <h3>Quick Links</h3>
       <p><a href="index.html">Home</a></p>
       <p><a href="about.html">About</a></p>
-      <p><a href="admission.html">Admission</a></p>
+      <p><a href="donation.html">Donation</a></p>
       <p><a href="contact.html">Contact</a></p>
     </div>
 
@@ -89,15 +87,20 @@
   <div class="footer-bottom">
     <p>© 2026 Christian Public Model School. All Rights Reserved.</p>
   </div>
- <link rel="stylesheet" href="style.css">
-  
-  <a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
-  <img src="images/whatsapp.png">
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
+  <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
- <script src="script.js"></script> 
-  function toggleMenu(){
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
   document.querySelector(".menu-overlay").classList.toggle("active");
 }
+</script>
+
 </body>
 </html>
