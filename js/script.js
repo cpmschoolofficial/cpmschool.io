@@ -1,22 +1,23 @@
-function toggleMenu(){
+function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
 }
 
-/* SLIDER FIX */
+/* SLIDER */
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 
-function showSlide(){
+function showSlide(i){
   slides.forEach(s => s.classList.remove("active"));
-  slides[index].classList.add("active");
-
-  index++;
-  if(index >= slides.length){
-    index = 0;
-  }
+  slides[i].classList.add("active");
 }
 
-setInterval(showSlide, 4000);
+function nextSlide(){
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+setInterval(nextSlide, 4000);
 
 // SCROLL ANIMATION
 const elements = document.querySelectorAll('.animate');
