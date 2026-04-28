@@ -2,93 +2,316 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donate - Christian Public Model School</title>
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  line-height:1.6;
+  background:#f5f7fa;
+}
+
+/* NAVBAR */
+header{
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  width:40px;
+  margin-right:10px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+/* HERO */
+.donation-hero{
+  height:60vh;
+  background:url('images/children.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.donation-hero::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+  position:relative;
+  color:#fff;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size:40px;
+}
+
+.hero-content p{
+  margin:15px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 25px;
+  background:#f4b400;
+  color:#000;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:600;
+}
+
+/* SECTION */
+section{
+  padding:60px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.feature-box{
+  background:#fff;
+  padding:25px;
+  text-align:center;
+  border-radius:10px;
+  flex:1;
+  min-width:250px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.highlight{
+  border:2px solid #f4b400;
+  transform:scale(1.05);
+}
+
+/* LOCATION */
+.location iframe{
+  border-radius:10px;
+  margin-top:20px;
+}
+
+/* PAYMENT */
+.donation-section{
+  text-align:center;
+  background:#fff;
+}
+
+.payment-box{
+  background:#f9f9f9;
+  display:inline-block;
+  padding:20px;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.note{
+  font-size:14px;
+  color:gray;
+  margin-top:10px;
+}
+
+/* TRUST */
+.trust{
+  text-align:center;
+}
+
+.trust p{
+  margin:8px 0;
+}
+
+/* FOOTER */
+.footer{
+  background:#222;
+  color:#fff;
+  padding:40px 0;
+}
+
+.footer-content{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.footer a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:20px;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav ul{
+    display:none;
+  }
+}
+
+</style>
 </head>
 
-<!-- HEADER -->
+<body>
+
+<!-- NAV -->
 <header>
   <nav class="container">
-
     <div class="logo">
       <img src="images/logo.jpg">
-      <h3>Christian Public Model School</h3>
+      <h3>CPM School</h3>
     </div>
 
-    <!-- HAMBURGER -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-    <!-- OVERLAY -->
-    <div class="menu-overlay" onclick="toggleMenu()"></div>
-
-    <!-- MENU -->
-    <ul id="navMenu">
-      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
-      <li><a href="donation.html" onclick="toggleMenu()">Donation</a></li>
-      <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
-      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="donation.html">Donation</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-
   </nav>
 </header>
- 
- <a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
-  <img src="images/whatsapp.png">
-</a> 
+
 <!-- HERO -->
-<section class="page-banner">
-  <h2>Support a Child’s Future</h2>
+<section class="donation-hero">
+  <div class="hero-content">
+    <h1>Change a Child’s Life Today</h1>
+    <p>Your donation provides education, food, and hope.</p>
+    <a href="#donate" class="btn">Donate Now</a>
+  </div>
 </section>
 
-<!-- DONATION CARDS -->
+<!-- WHY -->
 <section>
   <div class="container">
+    <h2 class="section-title">Why Your Support Matters</h2>
+    <p style="text-align:center;">
+      We provide education to underprivileged children in rural communities near Wahndo.
+    </p>
+  </div>
+</section>
 
-    <h2 class="section-title">Make a Difference</h2>
+<!-- DONATION OPTIONS -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Choose Your Impact</h2>
 
     <div class="features">
-
-      <div class="feature-box">
-        <h3>📚 $10</h3>
-        <p>Provides school supplies</p>
+      <div class="feature-box highlight">
+        <h3>$10</h3>
+        <p>Books & Supplies</p>
       </div>
 
       <div class="feature-box">
-        <h3>👟 $25</h3>
-        <p>Provides shoes & uniform</p>
+        <h3>$25</h3>
+        <p>Uniform & Essentials</p>
       </div>
 
       <div class="feature-box">
-        <h3>🎓 $50</h3>
-        <p>Supports one child monthly</p>
+        <h3>$50</h3>
+        <p>Monthly Student Support</p>
       </div>
-
     </div>
+  </div>
+</section>
 
+<!-- LOCATION -->
+<section class="location">
+  <div class="container">
+    <h2 class="section-title">Where Your Help Goes</h2>
+    <p style="text-align:center;">
+      Supporting students at FGA Church Khotray, Wahndo.
+    </p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=32.0357517,74.3832157&z=15&output=embed"
+      width="100%" height="350">
+    </iframe>
   </div>
 </section>
 
 <!-- PAYMENT -->
-<section class="donation-section">
+<section id="donate" class="donation-section">
   <h2>Donate Now</h2>
-  <p>Your support brings education and hope</p>
+  <p>100% goes to student support</p>
 
-  <div style="margin-top:20px;">
-    <p><b>Easypaisa / JazzCash:</b></p>
+  <div class="payment-box">
+    <p><b>Easypaisa / JazzCash</b></p>
     <h2>0301 6647770</h2>
+    <p>Christian Public Model School</p>
   </div>
 
+  <p class="note">After donation, contact us on WhatsApp</p>
 </section>
 
-<!-- IMPACT -->
-<section>
-  <div class="container section-box">
-    <h2 class="section-title">Where Your Money Goes</h2>
-    <p>✔ Education materials</p>
-    <p>✔ Food & basic needs</p>
-    <p>✔ Teacher support</p>
-    <p>✔ School development</p>
+<!-- TRUST -->
+<section class="trust">
+  <div class="container">
+    <h2 class="section-title">Transparency</h2>
+    <p>✔ Direct support to students</p>
+    <p>✔ No middlemen</p>
+    <p>✔ Community-based impact</p>
   </div>
 </section>
 
@@ -98,13 +321,12 @@
 
     <div>
       <h3>Christian Public Model School</h3>
-      <p>Providing free education and hope to underprivileged children.</p>
+      <p>Providing education and hope.</p>
     </div>
 
     <div>
-      <h3>Quick Links</h3>
+      <h3>Links</h3>
       <p><a href="index.html">Home</a></p>
-      <p><a href="about.html">About</a></p>
       <p><a href="contact.html">Contact</a></p>
     </div>
 
@@ -117,14 +339,9 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 Christian Public Model School</p>
+    <p>© 2026 CPM School</p>
   </div>
 </footer>
 
-<script src="js/script.js"></script>
-  function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
-  document.querySelector(".menu-overlay").classList.toggle("active");
-}
 </body>
 </html>
