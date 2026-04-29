@@ -83,3 +83,9 @@ function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
   document.querySelector(".menu-overlay").classList.toggle("active");
 }
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
+</script>
