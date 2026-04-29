@@ -376,3 +376,34 @@ section{
     flex-direction:column;
   }
 }
+.donation-hero{
+  height:80vh;
+  background: url('images/donation.jpg') center/cover no-repeat;
+  position:relative;
+}
+
+.donation-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.65); /* 🔥 TRANSPARENT DARK */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.donation-overlay h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.donation-overlay p{
+  font-size:18px;
+  margin-bottom:20px;
+}
