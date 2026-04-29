@@ -24,15 +24,14 @@
 
 body{
   background:var(--light);
-  color:#222;
 }
 
 /* HEADER */
 header{
   position:sticky;
   top:0;
-  background:linear-gradient(135deg,#0d47a1,#1565c0);
   z-index:2000;
+  background:linear-gradient(135deg,#0d47a1,#1565c0);
 }
 
 nav{
@@ -49,7 +48,7 @@ nav{
 }
 
 .logo img{
-  width:50px;
+  width:45px;
 }
 
 .logo h3{
@@ -88,7 +87,7 @@ nav{
   left:0;
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.6);
   display:none;
   z-index:1500;
 }
@@ -109,16 +108,16 @@ nav{
     background:#0d47a1;
     flex-direction:column;
     padding-top:80px;
-    transition:0.3s;
+    transition:0.4s;
+  }
+
+  #navMenu.active{
+    right:0;
   }
 
   #navMenu li{
     margin:20px 0;
     text-align:center;
-  }
-
-  #navMenu.active{
-    right:0;
   }
 
   .menu-overlay.active{
@@ -128,41 +127,39 @@ nav{
 
 /* HERO */
 .donation-hero{
-  height:75vh;
-  background:url('images/donation.jpg') center/cover no-repeat;
-  position:relative;
-}
-
-.donation-overlay{
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.6);
+  height:70vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('images/children.jpg') center/cover;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
   text-align:center;
   color:white;
-  padding:20px;
 }
 
-.donation-overlay h1{
-  font-size:40px;
+.hero-content h1{
+  font-size:38px;
 }
 
-.donation-overlay p{
+.hero-content p{
   margin:15px 0;
 }
 
 /* BUTTON */
-.btn{
-  padding:12px 30px;
-  background:var(--accent);
+.donate-btn{
+  display:inline-block;
+  padding:14px 35px;
+  background:linear-gradient(135deg,#ff9800,#ff5722);
   color:white;
-  text-decoration:none;
   border-radius:30px;
+  text-decoration:none;
   font-weight:bold;
+  transition:0.3s;
+}
+
+.donate-btn:hover{
+  transform:scale(1.05);
 }
 
 /* SECTION */
@@ -170,6 +167,7 @@ section{
   padding:60px 5%;
 }
 
+/* TITLE */
 .section-title{
   text-align:center;
   margin-bottom:30px;
@@ -191,26 +189,18 @@ section{
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* PAYMENT BOX */
+/* PAYMENT */
 .payment-box{
   background:white;
   padding:25px;
-  text-align:center;
   border-radius:10px;
+  text-align:center;
   margin-top:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-}
-
-.whatsapp img{
-  width:55px;
-  height:55px;
-  border-radius:50%;
+.payment-box h2{
+  color:var(--primary);
 }
 
 /* FOOTER */
@@ -239,7 +229,6 @@ section{
 <!-- HEADER -->
 <header>
   <nav>
-
     <div class="logo">
       <img src="images/logo.jpg">
       <h3>Christian Public Model School</h3>
@@ -255,62 +244,47 @@ section{
       <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
       <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
     </ul>
-
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="donation-hero">
-  <div class="donation-overlay">
-    <h1>Support a Child. Change a Future.</h1>
+  <div class="hero-content">
+    <h1>Change a Child’s Life Today</h1>
     <p>Your donation provides education, food, and hope.</p>
-    <a href="#donate" class="btn">Donate Now</a>
+    <a href="#donate" class="donate-btn">Donate Now</a>
   </div>
 </section>
 
 <!-- WHY -->
 <section>
   <h2 class="section-title">Why Your Support Matters</h2>
-  <p style="text-align:center; max-width:700px; margin:auto;">
-    We provide free education to underprivileged children and help them build a better future. 
-    Your support directly impacts their lives by giving them access to learning, care, and opportunity.
+  <p style="text-align:center;">
+    Your contribution directly supports children with education, uniforms,
+    food, and a safe learning environment. Every donation creates real impact.
   </p>
 </section>
 
-<!-- DONATION OPTIONS -->
+<!-- OPTIONS -->
 <section>
-  <h2 class="section-title">Ways to Donate</h2>
+  <h2 class="section-title">Choose Your Impact</h2>
 
   <div class="features">
-
     <div class="feature-box">
-      <h3>💳 Bank Transfer</h3>
-      <p>Account Title: Christian Public Model School</p>
-      <p>Account No: 123456789</p>
+      <h3>$10</h3>
+      <p>Books & Supplies</p>
     </div>
 
     <div class="feature-box">
-      <h3>🌍 PayPal</h3>
-      <p>Donate securely online</p>
-      <a href="#" class="btn">Donate</a>
+      <h3>$25</h3>
+      <p>Uniform & Essentials</p>
     </div>
 
     <div class="feature-box">
-      <h3>📱 EasyPaisa / JazzCash</h3>
-      <p>0301 6647770</p>
+      <h3>$50</h3>
+      <p>Monthly Student Support</p>
     </div>
-
   </div>
-</section>
-
-<!-- LOCATION -->
-<section>
-  <h2 class="section-title">Where Your Help Goes</h2>
-
-  <iframe 
-    src="https://www.google.com/maps?q=32.0357517,74.3832157&z=15&output=embed"
-    width="100%" height="300" style="border:0; border-radius:10px;">
-  </iframe>
 </section>
 
 <!-- PAYMENT -->
@@ -323,25 +297,16 @@ section{
     <p>Christian Public Model School</p>
   </div>
 
-  <p style="text-align:center; margin-top:10px;">
-    After donation, please confirm via WhatsApp.
-  </p>
-</section>
-
-<!-- TRUST -->
-<section>
-  <h2 class="section-title">Transparency</h2>
-
-  <p style="text-align:center;">
-    ✔ 100% funds go to students <br>
-    ✔ No middlemen <br>
-    ✔ Real impact in community
-  </p>
+  <div class="payment-box">
+    <p><b>Bank Transfer</b></p>
+    <p>Account Title: Christian Public Model School</p>
+    <p>Account No: 1234567890</p>
+    <p>Bank: HBL / UBL</p>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-
   <div class="footer-content">
 
     <div>
@@ -352,7 +317,6 @@ section{
     <div>
       <h3>Links</h3>
       <p><a href="index.html">Home</a></p>
-      <p><a href="about.html">About</a></p>
       <p><a href="contact.html">Contact</a></p>
     </div>
 
@@ -367,13 +331,7 @@ section{
   <div class="footer-bottom">
     © 2026 Christian Public Model School
   </div>
-
 </footer>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
-  <img src="images/whatsapp.png">
-</a>
 
 <!-- JS -->
 <script>
