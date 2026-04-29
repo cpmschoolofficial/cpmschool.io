@@ -75,28 +75,45 @@
 </section>
 
 <!-- CONTACT FORM -->
-<section>
-  <div class="container">
+<form class="contact-form">
 
-    <h2 class="section-title">Send a Message</h2>
+  <h3 class="form-heading">Send Us a Message</h3>
+  <p class="form-subtext">We usually respond within 24 hours</p>
 
-    <form>
+  <div class="form-row">
+    <div class="input-group">
+      <label>Your Name</label>
+      <input type="text" required>
+    </div>
 
-      <div class="form-row">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-      </div>
+    <div class="input-group">
+      <label>Email Address</label>
+      <input type="email" required>
+    </div>
+  </div>
 
-      <div class="form-row">
-        <input type="text" placeholder="Subject" required>
-        <input type="tel" placeholder="Phone Number">
-      </div>
+  <div class="form-row">
+    <div class="input-group">
+      <label>Subject</label>
+      <input type="text" required>
+    </div>
 
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+    <div class="input-group">
+      <label>Phone (Optional)</label>
+      <input type="tel">
+    </div>
+  </div>
 
-      <button class="btn btn-primary">Send Message</button>
+  <div class="input-group">
+    <label>Your Message</label>
+    <textarea rows="5" required></textarea>
+  </div>
 
-    </form>
+  <button type="submit" class="btn-submit">
+    Send Message →
+  </button>
+
+</form>
 
   </div>
 </section>
