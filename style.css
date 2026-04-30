@@ -676,3 +676,10 @@ section{
   color:white;
   text-align:center;
 }
+.menu-overlay{
+  display:none;
+}
+
+.menu-overlay.active{
+  display:block;
+}
