@@ -89,3 +89,18 @@ function toggleMenu(){
   document.querySelector(".menu-overlay").classList.toggle("active");
 }
 </script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i){
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+function autoSlide(){
+  index++;
+  if(index >= slides.length){ index = 0; }
+  showSlide(index);
+}
+
+setInterval(autoSlide, 4000);
