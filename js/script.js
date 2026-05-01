@@ -1,4 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/js/script.js b/js/script.js
 index 7be56f9299aa877fa236a0b31405f559d7fa36b4..fb365757ff9f00b68c9c590c87be09e7eb0b35df 100644
 --- a/js/script.js
@@ -125,6 +124,3 @@ index 7be56f9299aa877fa236a0b31405f559d7fa36b4..fb365757ff9f00b68c9c590c87be09e7
 -setInterval(autoSlide, 4000);
 +window.addEventListener("load", showOnScroll);
 +window.addEventListener("scroll", showOnScroll);
- 
-EOF
-)
