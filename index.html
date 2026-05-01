@@ -1,655 +1,332 @@
-diff --git a/index.html b/index.html
-index b2de862be8cb60a54d2ea5c925037a3969e149b9..de8f61f4abbda499dc73f1bf91ed8f878feb1956 100644
---- a/index.html
-+++ b/index.html
-@@ -1,332 +1,318 @@
--<!DOCTYPE html>
--<html>
--<head>
--<meta name="viewport" content="width=device-width, initial-scale=1.0">
--<title>Home</title>
--<link rel="stylesheet" href="style.css">
--</head>
--<body>
--
--<!-- Haeder -->
--<header>
--  <nav>
--    <div class="logo">
--      <img src="images/logo.jpg">
--      <h3>Christian Public Model School</h3>
--    </div>
--    <!-- HAMBURGER -->
--    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
--
--    <!-- OVERLAY -->
--    <div class="menu-overlay" onclick="toggleMenu()"></div>
--
--    <!-- MENU -->
--    <ul id="navMenu">
--      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
--      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
--      <li><a href="donation.html" onclick="toggleMenu()">Donation</a></li>
--      <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
--      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
--    </ul>
--
--  </nav>
--</header>
--  
--<!-- SLIDER -->
--<section class="slider">
--
--  <div class="slide active">
--    <img src="images/hero/hero.jpg">
--    <div class="slide-content">
--      <h1>Christian Public Model School</h1>
--      <p>Education for every child</p>
--      <a href="admission.html" class="btn btn-primary">Admissions Open</a>
--    </div>
--  </div>
--
--  <div class="slide">
--    <img src="images/hero/hero1.jpg">
--    <div class="slide-content">
--      <h1>Support a Child</h1>
--      <p>Your help builds future</p>
--      <a href="contact.html" class="btn btn-secondary">Donate Now</a>
--    </div>
--  </div>
--
--  <div class="slide">
--    <img src="images/hero/hero2.jpg">
--    <div class="slide-content">
--      <h1>Quality Education</h1>
--      <p>Building bright futures</p>
--    </div>
--  </div>
--
--</section>
--<!-- Achivements -->
--  <section class="impact">
--  <div class="container">
--    <h2 class="section-title">Our Impact</h2>
--    <div class="features">
--      <div class="feature-box">
--        <h2>500+</h2>
--        <p>Students Educated</p>
--      </div>
--      <div class="feature-box">
--        <h2>25+</h2>
--        <p>Years of Service</p>
--      </div>
--      <div class="feature-box">
--        <h2>100%</h2>
--        <p>Free Education</p>
--      </div>
--      <div class="feature-box">
--        <h2>10+</h2>
--        <p>Communities Supported</p>
--      </div>
--    </div>
--  </div>
--</section>
--<!-- ABOUT -->
--<section>
--  <div class="container section-box">
--    <h2 class="section-title">Who We Are</h2>
--    <p>
--      We provide free education to underprivileged children and help build a better future through learning and support.
--   Over the years, we have reached hundreds of students, helping them take meaningful steps toward their dreams. Each child we support represents a story of hope, resilience, and potential. We work closely with families and local communities to create a supportive environment where children can thrive both inside and outside the 
--We also believe in transparency, accountability, and impact. Every contribution we receive is carefully utilized to maximize its benefit for the students we serve. Our supporters and donors are an essential part of our journey, helping us expand our reach and deepen our 
--As we continue to grow, our vision remains clear: to build a world where no child is left behind due to lack of resources or opportunity. Together, we can make a lasting difference—one student, one story, and one future at a time.
--    </p>
--        <p>
--      Christian Public Model School is dedicated to providing quality education
--      rooted in strong moral values and discipline. We aim to develop confident, 
--      responsible, and capable individuals ready to face real-world challenges.
--    </p>
--    <p>
--      Our approach combines academic excellence with character building, ensuring 
--      students grow not only intellectually but also morally and socially.
--    </p>
--    
--  </div>
--</section>
--
--<!-- IMAGE -->
--<section class="image-section image1">
--  <div class="overlay">
--    <h2>Education Changes Lives</h2>
--    <p>Every child deserves a chance</p>
--  </div>
--</section>
--  <section>
--  <div class="container">
--
--    <h2 class="section-title">Our Programs</h2>
--
--    <div class="features">
--
--      <div class="feature-box">
--        <h3>📚 Education</h3>
--        <p>Providing free schooling to underprivileged children.</p>
--      </div>
--
--      <div class="feature-box">
--        <h3>💻 Digital Learning</h3>
--        <p>Basic computer education and modern skills.</p>
--      </div>
--
--      <div class="feature-box">
--        <h3>🎓 Scholarships</h3>
--        <p>Supporting higher education for deserving students.</p>
--      </div>
--
--      <div class="feature-box">
--        <h3>💧 Health & Hygiene</h3>
--        <p>Clean water, sanitation, and awareness.</p>
--      </div>
--
--    </div>
--  </div>
--</section>
--
--<!-- MISSION -->
--<section>
--  <div class="container">
--    <h2 class="section-title">Our Mission & Goals</h2>
--
--    <div class="features">
--
--      <div class="feature-box">
--        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
--        <h3>Access to Education</h3>
--        <p>Ensure every child can go to school and support poor families.</p>
--      </div>
--
--      <div class="feature-box">
--        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
--        <h3>Learning Materials</h3>
--        <p>Provide books, bags, uniforms, and essential supplies.</p>
--      </div>
--
--      <div class="feature-box">
--        <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png">
--        <h3>Health & Hygiene</h3>
--        <p>Clean water, sanitation, and a healthy environment.</p>
--      </div>
--
--      <div class="feature-box">
--        <img src="https://cdn-icons-png.flaticon.com/512/1670/1670080.png">
--        <h3>Safe Environment</h3>
--        <p>Clean classrooms and protection for every child.</p>
--      </div>
--
--      <div class="feature-box">
--        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
--        <h3>Digital Education</h3>
--        <p>Basic computer knowledge and modern learning tools.</p>
--      </div>
--
--      <div class="feature-box">
--        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png">
--        <h3>Moral & Faith Values</h3>
--        <p>Teaching kindness, discipline, and Christian values.</p>
--      </div>
--
--    </div>
--  </div>
--</section>
--
--<!-- IMAGE -->
--<section class="image-section image2">
--  <div class="overlay">
--    <h2>Support a Child Today</h2>
--    <p>Your help creates a brighter future</p>
--  </div>
--</section>
--
--<!-- STUDENTS -->
--<section class="image-section">
--  <div class="overlay">
--    <h2>Real Stories</h2>
--    <p>
--      “I want to become a teacher and help others learn.”
--      – Student of our school
--    </p>
--  </div>
--</section>
--  <!-- STUDENTS PREVIEW -->
--<section>
--  <h2 class="section-title">Our Students</h2>
--  <p>
--      More than 70 students are shaping their future with us. Each child has a dream, 
--      and we are committed to helping them achieve it.
--    </p>
--     <div class="features">
--       
--      <div class="feature-box animate">
--     <img src="images/students/student1.jpg" width="100%">
--      <h3>Diya Rafaqat</h3>
--      <p>Wants to become a Doctor</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student2.jpg" width="100%">
--      <h3>Adan Izhaq</h3>
--      <p>Wants to become an Engineer</p>
--    </div>
--
--    <div class="feature-box animate">
--    <img src="images/students/student3.jpg" width="100%">
--      <h3>Onan Asif</h3>
--      <p>Wants to become a Police Officer</p>
--    </div>
--
--    <div class="feature-box animate">
--      <img src="images/students/student4.jpg" width="100%">
--      <h3>Muskan Shan</h3>
--      <p>Wants to become a Nurse</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student5.jpg" width="100%">
--      <h3>Adan Ashiq</h3>
--      <p>Wants to become a Teacher</p>
--    </div>
--
--    <div class="feature-box animate">
--      <img src="images/students/student6.jpg" width="100%">
--      <h3>Rizwan Shan</h3>
--      <p>Wants to become a Businessman</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student7.jpg" width="100%">
--      <h3>Haroon Nasir</h3>
--      <p>Wants to become a Soldier</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student8.jpg" width="100%">
--      <h3>Kashan Rafaqat</h3>
--      <p>Wants to become an Engineer</p>
--    </div>
--
--    <div class="feature-box animate">
--    <img src="images/students/student9.jpg" width="100%">
--      <h3>Labuna Sarfraz</h3>
--      <p>Wants to become a Teacher</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student10.jpg" width="100%">
--      <h3>Rohama Sunil</h3>
--      <p>Wants to become a Teacher</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student11.jpg" width="100%">
--      <h3>Meerub Almas</h3>
--      <p>Wants to become a Doctor</p>
--    </div>
--
--    <div class="feature-box animate">
--     <img src="images/students/student12.jpg" width="100%">
--      <h3>Yashal Qasir</h3>
--      <p>Wants to become a Businessman</p>
--    </div>
--  </div>
--</section>
--
--<!-- DONATION -->
--<section class="donation-section">
--  <h2>Support Our Mission</h2>
--  <p>Your support can change a child's life</p>
--  <a href="contact.html" class="btn donate-btn">Donate Now</a>
--</section>
--
--<!-- FOOTER -->
--
--<footer class="footer">
--  <div class="footer-content">
--    <div><h3>CPM School</h3></div>
--  </div>
--  <div class="footer-bottom">© 2026</div>
--</footer>
--<a href="https://wa.me/923016647770" class="whatsapp">
--<img src="images/whatsapp.png">
--</a>
--<script src="js/script.js"></script>
--</body>
--</html>
--
--  <!-- WHATSAPP -->
--
--<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
--  <img src="images/whatsapp.png">
--</a>
--   <function toggleMenu(){
--  document.getElementById("navMenu").classList.toggle("active");
--  document.querySelector(".menu-overlay").classList.toggle("active");
--}
--   <script src="js/script.js"></script> 
--  
--</body>
--</html>
-+<!DOCTYPE html>
-+<html>
-+<head>
-+<meta name="viewport" content="width=device-width, initial-scale=1.0">
-+<title>Home</title>
-+<link rel="stylesheet" href="style.css">
-+</head>
-+<body>
-+
-+<!-- Haeder -->
-+<header>
-+  <nav>
-+    <div class="logo">
-+      <img src="images/logo.jpg">
-+      <h3>Christian Public Model School</h3>
-+    </div>
-+    <!-- HAMBURGER -->
-+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-+
-+    <!-- OVERLAY -->
-+    <div class="menu-overlay" onclick="toggleMenu()"></div>
-+
-+    <!-- MENU -->
-+    <ul id="navMenu">
-+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
-+      <li><a href="donation.html" onclick="toggleMenu()">Donation</a></li>
-+      <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
-+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
-+    </ul>
-+
-+  </nav>
-+</header>
-+  
-+<!-- SLIDER -->
-+<section class="slider">
-+
-+  <div class="slide active">
-+    <img src="images/hero/hero.jpg">
-+    <div class="slide-content">
-+      <h1>Christian Public Model School</h1>
-+      <p>Education for every child</p>
-+      <a href="admission.html" class="btn btn-primary">Admissions Open</a>
-+    </div>
-+  </div>
-+
-+  <div class="slide">
-+    <img src="images/hero/hero1.jpg">
-+    <div class="slide-content">
-+      <h1>Support a Child</h1>
-+      <p>Your help builds future</p>
-+      <a href="contact.html" class="btn btn-secondary">Donate Now</a>
-+    </div>
-+  </div>
-+
-+  <div class="slide">
-+    <img src="images/hero/hero2.jpg">
-+    <div class="slide-content">
-+      <h1>Quality Education</h1>
-+      <p>Building bright futures</p>
-+    </div>
-+  </div>
-+
-+</section>
-+<!-- Achivements -->
-+  <section class="impact">
-+  <div class="container">
-+    <h2 class="section-title">Our Impact</h2>
-+    <div class="features">
-+      <div class="feature-box">
-+        <h2>500+</h2>
-+        <p>Students Educated</p>
-+      </div>
-+      <div class="feature-box">
-+        <h2>25+</h2>
-+        <p>Years of Service</p>
-+      </div>
-+      <div class="feature-box">
-+        <h2>100%</h2>
-+        <p>Free Education</p>
-+      </div>
-+      <div class="feature-box">
-+        <h2>10+</h2>
-+        <p>Communities Supported</p>
-+      </div>
-+    </div>
-+  </div>
-+</section>
-+<!-- ABOUT -->
-+<section>
-+  <div class="container section-box">
-+    <h2 class="section-title">Who We Are</h2>
-+    <p>
-+      We provide free education to underprivileged children and help build a better future through learning and support.
-+   Over the years, we have reached hundreds of students, helping them take meaningful steps toward their dreams. Each child we support represents a story of hope, resilience, and potential. We work closely with families and local communities to create a supportive environment where children can thrive both inside and outside the 
-+We also believe in transparency, accountability, and impact. Every contribution we receive is carefully utilized to maximize its benefit for the students we serve. Our supporters and donors are an essential part of our journey, helping us expand our reach and deepen our 
-+As we continue to grow, our vision remains clear: to build a world where no child is left behind due to lack of resources or opportunity. Together, we can make a lasting difference—one student, one story, and one future at a time.
-+    </p>
-+        <p>
-+      Christian Public Model School is dedicated to providing quality education
-+      rooted in strong moral values and discipline. We aim to develop confident, 
-+      responsible, and capable individuals ready to face real-world challenges.
-+    </p>
-+    <p>
-+      Our approach combines academic excellence with character building, ensuring 
-+      students grow not only intellectually but also morally and socially.
-+    </p>
-+    
-+  </div>
-+</section>
-+
-+<!-- IMAGE -->
-+<section class="image-section image1">
-+  <div class="overlay">
-+    <h2>Education Changes Lives</h2>
-+    <p>Every child deserves a chance</p>
-+  </div>
-+</section>
-+  <section>
-+  <div class="container">
-+
-+    <h2 class="section-title">Our Programs</h2>
-+
-+    <div class="features">
-+
-+      <div class="feature-box">
-+        <h3>📚 Education</h3>
-+        <p>Providing free schooling to underprivileged children.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <h3>💻 Digital Learning</h3>
-+        <p>Basic computer education and modern skills.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <h3>🎓 Scholarships</h3>
-+        <p>Supporting higher education for deserving students.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <h3>💧 Health & Hygiene</h3>
-+        <p>Clean water, sanitation, and awareness.</p>
-+      </div>
-+
-+    </div>
-+  </div>
-+</section>
-+
-+<!-- MISSION -->
-+<section>
-+  <div class="container">
-+    <h2 class="section-title">Our Mission & Goals</h2>
-+
-+    <div class="features">
-+
-+      <div class="feature-box">
-+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
-+        <h3>Access to Education</h3>
-+        <p>Ensure every child can go to school and support poor families.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
-+        <h3>Learning Materials</h3>
-+        <p>Provide books, bags, uniforms, and essential supplies.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png">
-+        <h3>Health & Hygiene</h3>
-+        <p>Clean water, sanitation, and a healthy environment.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <img src="https://cdn-icons-png.flaticon.com/512/1670/1670080.png">
-+        <h3>Safe Environment</h3>
-+        <p>Clean classrooms and protection for every child.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-+        <h3>Digital Education</h3>
-+        <p>Basic computer knowledge and modern learning tools.</p>
-+      </div>
-+
-+      <div class="feature-box">
-+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png">
-+        <h3>Moral & Faith Values</h3>
-+        <p>Teaching kindness, discipline, and Christian values.</p>
-+      </div>
-+
-+    </div>
-+  </div>
-+</section>
-+
-+<!-- IMAGE -->
-+<section class="image-section image2">
-+  <div class="overlay">
-+    <h2>Support a Child Today</h2>
-+    <p>Your help creates a brighter future</p>
-+  </div>
-+</section>
-+
-+<!-- STUDENTS -->
-+<section class="image-section">
-+  <div class="overlay">
-+    <h2>Real Stories</h2>
-+    <p>
-+      “I want to become a teacher and help others learn.”
-+      – Student of our school
-+    </p>
-+  </div>
-+</section>
-+  <!-- STUDENTS PREVIEW -->
-+<section>
-+  <h2 class="section-title">Our Students</h2>
-+  <p>
-+      More than 70 students are shaping their future with us. Each child has a dream, 
-+      and we are committed to helping them achieve it.
-+    </p>
-+     <div class="features">
-+       
-+      <div class="feature-box animate">
-+     <img src="images/students/student1.jpg" width="100%">
-+      <h3>Diya Rafaqat</h3>
-+      <p>Wants to become a Doctor</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student2.jpg" width="100%">
-+      <h3>Adan Izhaq</h3>
-+      <p>Wants to become an Engineer</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+    <img src="images/students/student3.jpg" width="100%">
-+      <h3>Onan Asif</h3>
-+      <p>Wants to become a Police Officer</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+      <img src="images/students/student4.jpg" width="100%">
-+      <h3>Muskan Shan</h3>
-+      <p>Wants to become a Nurse</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student5.jpg" width="100%">
-+      <h3>Adan Ashiq</h3>
-+      <p>Wants to become a Teacher</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+      <img src="images/students/student6.jpg" width="100%">
-+      <h3>Rizwan Shan</h3>
-+      <p>Wants to become a Businessman</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student7.jpg" width="100%">
-+      <h3>Haroon Nasir</h3>
-+      <p>Wants to become a Soldier</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student8.jpg" width="100%">
-+      <h3>Kashan Rafaqat</h3>
-+      <p>Wants to become an Engineer</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+    <img src="images/students/student9.jpg" width="100%">
-+      <h3>Labuna Sarfraz</h3>
-+      <p>Wants to become a Teacher</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student10.jpg" width="100%">
-+      <h3>Rohama Sunil</h3>
-+      <p>Wants to become a Teacher</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student11.jpg" width="100%">
-+      <h3>Meerub Almas</h3>
-+      <p>Wants to become a Doctor</p>
-+    </div>
-+
-+    <div class="feature-box animate">
-+     <img src="images/students/student12.jpg" width="100%">
-+      <h3>Yashal Qasir</h3>
-+      <p>Wants to become a Businessman</p>
-+    </div>
-+  </div>
-+</section>
-+
-+<!-- DONATION -->
-+<section class="donation-section">
-+  <h2>Support Our Mission</h2>
-+  <p>Your support can change a child's life</p>
-+  <a href="contact.html" class="btn donate-btn">Donate Now</a>
-+</section>
-+
-+<!-- FOOTER -->
-+
-+<footer class="footer">
-+  <div class="footer-content">
-+    <div><h3>CPM School</h3></div>
-+  </div>
-+  <div class="footer-bottom">© 2026</div>
-+</footer>
-+<a href="https://wa.me/923016647770" class="whatsapp">
-+<img src="images/whatsapp.png">
-+</a>
-+<script src="js/script.js"></script>
-+</body>
-+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Haeder -->
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.jpg">
+      <h3>Christian Public Model School</h3>
+    </div>
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- OVERLAY -->
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <!-- MENU -->
+    <ul id="navMenu">
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="donation.html" onclick="toggleMenu()">Donation</a></li>
+      <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+  
+<!-- SLIDER -->
+<section class="slider">
+
+  <div class="slide active">
+    <img src="images/hero/hero.jpg">
+    <div class="slide-content">
+      <h1>Christian Public Model School</h1>
+      <p>Education for every child</p>
+      <a href="admission.html" class="btn btn-primary">Admissions Open</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="images/hero/hero1.jpg">
+    <div class="slide-content">
+      <h1>Support a Child</h1>
+      <p>Your help builds future</p>
+      <a href="contact.html" class="btn btn-secondary">Donate Now</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="images/hero/hero2.jpg">
+    <div class="slide-content">
+      <h1>Quality Education</h1>
+      <p>Building bright futures</p>
+    </div>
+  </div>
+
+</section>
+<!-- Achivements -->
+  <section class="impact">
+  <div class="container">
+    <h2 class="section-title">Our Impact</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h2>500+</h2>
+        <p>Students Educated</p>
+      </div>
+      <div class="feature-box">
+        <h2>25+</h2>
+        <p>Years of Service</p>
+      </div>
+      <div class="feature-box">
+        <h2>100%</h2>
+        <p>Free Education</p>
+      </div>
+      <div class="feature-box">
+        <h2>10+</h2>
+        <p>Communities Supported</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section>
+  <div class="container section-box">
+    <h2 class="section-title">Who We Are</h2>
+    <p>
+      We provide free education to underprivileged children and help build a better future through learning and support.
+   Over the years, we have reached hundreds of students, helping them take meaningful steps toward their dreams. Each child we support represents a story of hope, resilience, and potential. We work closely with families and local communities to create a supportive environment where children can thrive both inside and outside the 
+We also believe in transparency, accountability, and impact. Every contribution we receive is carefully utilized to maximize its benefit for the students we serve. Our supporters and donors are an essential part of our journey, helping us expand our reach and deepen our 
+As we continue to grow, our vision remains clear: to build a world where no child is left behind due to lack of resources or opportunity. Together, we can make a lasting difference—one student, one story, and one future at a time.
+    </p>
+        <p>
+      Christian Public Model School is dedicated to providing quality education
+      rooted in strong moral values and discipline. We aim to develop confident, 
+      responsible, and capable individuals ready to face real-world challenges.
+    </p>
+    <p>
+      Our approach combines academic excellence with character building, ensuring 
+      students grow not only intellectually but also morally and socially.
+    </p>
+    
+  </div>
+</section>
+
+<!-- IMAGE -->
+<section class="image-section image1">
+  <div class="overlay">
+    <h2>Education Changes Lives</h2>
+    <p>Every child deserves a chance</p>
+  </div>
+</section>
+  <section>
+  <div class="container">
+
+    <h2 class="section-title">Our Programs</h2>
+
+    <div class="features">
+
+      <div class="feature-box">
+        <h3>📚 Education</h3>
+        <p>Providing free schooling to underprivileged children.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>💻 Digital Learning</h3>
+        <p>Basic computer education and modern skills.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>🎓 Scholarships</h3>
+        <p>Supporting higher education for deserving students.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>💧 Health & Hygiene</h3>
+        <p>Clean water, sanitation, and awareness.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Our Mission & Goals</h2>
+
+    <div class="features">
+
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+        <h3>Access to Education</h3>
+        <p>Ensure every child can go to school and support poor families.</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+        <h3>Learning Materials</h3>
+        <p>Provide books, bags, uniforms, and essential supplies.</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png">
+        <h3>Health & Hygiene</h3>
+        <p>Clean water, sanitation, and a healthy environment.</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1670/1670080.png">
+        <h3>Safe Environment</h3>
+        <p>Clean classrooms and protection for every child.</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+        <h3>Digital Education</h3>
+        <p>Basic computer knowledge and modern learning tools.</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png">
+        <h3>Moral & Faith Values</h3>
+        <p>Teaching kindness, discipline, and Christian values.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE -->
+<section class="image-section image2">
+  <div class="overlay">
+    <h2>Support a Child Today</h2>
+    <p>Your help creates a brighter future</p>
+  </div>
+</section>
+
+<!-- STUDENTS -->
+<section class="image-section">
+  <div class="overlay">
+    <h2>Real Stories</h2>
+    <p>
+      “I want to become a teacher and help others learn.”
+      – Student of our school
+    </p>
+  </div>
+</section>
+  <!-- STUDENTS PREVIEW -->
+<section>
+  <h2 class="section-title">Our Students</h2>
+  <p>
+      More than 70 students are shaping their future with us. Each child has a dream, 
+      and we are committed to helping them achieve it.
+    </p>
+     <div class="features">
+       
+      <div class="feature-box animate">
+     <img src="images/students/student1.jpg" width="100%">
+      <h3>Diya Rafaqat</h3>
+      <p>Wants to become a Doctor</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student2.jpg" width="100%">
+      <h3>Adan Izhaq</h3>
+      <p>Wants to become an Engineer</p>
+    </div>
+
+    <div class="feature-box animate">
+    <img src="images/students/student3.jpg" width="100%">
+      <h3>Onan Asif</h3>
+      <p>Wants to become a Police Officer</p>
+    </div>
+
+    <div class="feature-box animate">
+      <img src="images/students/student4.jpg" width="100%">
+      <h3>Muskan Shan</h3>
+      <p>Wants to become a Nurse</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student5.jpg" width="100%">
+      <h3>Adan Ashiq</h3>
+      <p>Wants to become a Teacher</p>
+    </div>
+
+    <div class="feature-box animate">
+      <img src="images/students/student6.jpg" width="100%">
+      <h3>Rizwan Shan</h3>
+      <p>Wants to become a Businessman</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student7.jpg" width="100%">
+      <h3>Haroon Nasir</h3>
+      <p>Wants to become a Soldier</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student8.jpg" width="100%">
+      <h3>Kashan Rafaqat</h3>
+      <p>Wants to become an Engineer</p>
+    </div>
+
+    <div class="feature-box animate">
+    <img src="images/students/student9.jpg" width="100%">
+      <h3>Labuna Sarfraz</h3>
+      <p>Wants to become a Teacher</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student10.jpg" width="100%">
+      <h3>Rohama Sunil</h3>
+      <p>Wants to become a Teacher</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student11.jpg" width="100%">
+      <h3>Meerub Almas</h3>
+      <p>Wants to become a Doctor</p>
+    </div>
+
+    <div class="feature-box animate">
+     <img src="images/students/student12.jpg" width="100%">
+      <h3>Yashal Qasir</h3>
+      <p>Wants to become a Businessman</p>
+    </div>
+  </div>
+</section>
+
+<!-- DONATION -->
+<section class="donation-section">
+  <h2>Support Our Mission</h2>
+  <p>Your support can change a child's life</p>
+  <a href="contact.html" class="btn donate-btn">Donate Now</a>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer-content">
+    <div><h3>CPM School</h3></div>
+  </div>
+  <div class="footer-bottom">© 2026</div>
+</footer>
+<a href="https://wa.me/923016647770" class="whatsapp">
+<img src="images/whatsapp.png">
+</a>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+  <!-- WHATSAPP -->
+
+<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
+  <img src="images/whatsapp.png">
+</a>
+   <function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+  document.querySelector(".menu-overlay").classList.toggle("active");
+}
+   <script src="js/script.js"></script> 
+  
+</body>
+</html>
