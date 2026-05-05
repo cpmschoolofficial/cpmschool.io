@@ -407,3 +407,33 @@ section{
   font-size:18px;
   margin-bottom:20px;
 }
+/* LIMIT SECTION HEIGHT */
+.mission-section{
+  padding:60px 5%;
+}
+
+/* FIX BIG IMAGES */
+.mission-section img{
+  width:100%;
+  max-width:300px;   /* 🔥 controls size */
+  height:200px;      /* 🔥 fixed height */
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* GRID CLEAN */
+.mission-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  align-items:start;
+}
+
+/* CARD CONTROL */
+.mission-box{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
