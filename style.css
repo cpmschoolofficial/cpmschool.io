@@ -465,3 +465,8 @@ section{
   max-width:120px;
   height:auto;
 }
+.whatsapp img{
+  width:50px;      /* 🔥 reduce */
+  height:50px;
+  border-radius:50%;
+}
