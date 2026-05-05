@@ -457,3 +457,11 @@ section{
     display:block;
   }
 }
+.logo img{
+  width:45px;
+  height:auto;
+}
+.donation-hero img{
+  max-width:120px;
+  height:auto;
+}
