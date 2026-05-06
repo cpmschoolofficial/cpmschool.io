@@ -716,7 +716,7 @@ section{
 .feature-box p{
   padding: 10px 15px;
 }
-@media(max-width:768px){
+@media(max-width:500px){
 
   .feature-box img{
     height: 140px;
