@@ -4,8 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donation - Christian Public Model School</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* HERO */
+.donation-hero{
+  height:70vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+              url("images/donation-hero.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.hero-content h1{
+  font-size:40px;
+}
+
+.hero-content p{
+  margin:10px 0;
+  font-size:18px;
+}
+
+/* BUTTON */
+.donate-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* SECTION */
+section{
+  padding:60px 5%;
+}
+
+/* PAYMENT BOX */
+.payment-box{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  margin:20px auto;
+  max-width:400px;
+  text-align:center;
+}
+
+/* GRID */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.feature-box{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* LOGO FIX */
+.logo img{
+  width:50px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:2000;
+}
+
+.whatsapp img{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .donation-hero{
+    height:55vh;
+    padding:20px;
+  }
+
+  .hero-content h1{
+    font-size:24px;
+  }
+
+  .hero-content p{
+    font-size:14px;
+  }
+
+  .payment-box{
+    width:90%;
+  }
+
+}
+
+</style>
 </head>
+
 <body>
+
 <!-- HEADER -->
 <header>
   <nav class="container">
@@ -16,7 +129,6 @@
     </div>
 
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
     <div class="menu-overlay" onclick="toggleMenu()"></div>
 
     <ul id="navMenu">
@@ -29,11 +141,12 @@
 
   </nav>
 </header>
-  <!-- HERO -->
+
+<!-- HERO -->
 <section class="donation-hero">
   <div class="hero-content">
     <h1>Change a Child’s Life Today</h1>
-    <p>Your donation provides education, food, and hope.</p>
+    <p>Your support provides education, food, and hope.</p>
     <a href="#donate" class="donate-btn">Donate Now</a>
   </div>
 </section>
@@ -42,8 +155,8 @@
 <section>
   <h2 class="section-title">Why Your Support Matters</h2>
   <p style="text-align:center;">
-    Your contribution directly supports children with education, uniforms,
-    food, and a safe learning environment. Every donation creates real impact.
+    Every contribution directly supports underprivileged children by providing education,
+    uniforms, books, and a safe learning environment. Your help builds real futures.
   </p>
 </section>
 
@@ -88,7 +201,6 @@
 </section>
 
 <!-- FOOTER -->
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-content">
 
@@ -101,9 +213,9 @@
       <h3>Quick Links</h3>
       <p><a href="index.html">Home</a></p>
       <p><a href="about.html">About</a></p>
-       <p><a href="donation.html">Donation</a></p>
-       <p><a href="gallery.html">Gallery</a></p>
-       <p><a href="contact.html">Contact</a></p>
+      <p><a href="donation.html">Donation</a></p>
+      <p><a href="gallery.html">Gallery</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </div>
 
     <div>
@@ -119,19 +231,18 @@
   </div>
 </footer>
 
+<!-- WHATSAPP -->
+<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
+  <img src="images/whatsapp.png">
+</a>
+
 <!-- JS -->
-  <script src="js/script.js"></script>
-  
 <script>
 function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
   document.querySelector(".menu-overlay").classList.toggle("active");
 }
 </script>
-  <!-- WHATSAPP -->
-<a href="https://wa.me/923016647770" class="whatsapp" target="_blank">
-  <img src="images/whatsapp.png">
-</a>
 
 </body>
 </html>
