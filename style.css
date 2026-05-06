@@ -553,3 +553,6 @@ section{
     display:block;
   }
 }
+.donation-hero{
+  background: url('images/donation.jpg') center/cover no-repeat;
+}
